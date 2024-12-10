@@ -1,0 +1,98 @@
+model:
+  name: "llama3-groq-8b-8192-tool-use-preview"
+  api_key: "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"
+  temperature: 0.7
+  request_timeout: 10
+
+text_splitter:
+  chunk_size: 1000
+  chunk_overlap: 200
+
+retriever:
+  k: 3
+
+document:
+  file_path: "present_simple.md"
+
+app:
+  title: "TENSES"
+  subject: "SIMPLE PRESENT TENSE"
+
+topics:
+  - "Core Uses"
+  - "Additional Uses"
+  - "Key Points"
+
+subtopics:
+  "Core Uses":
+    - "Habitual Actions"
+    - "General Truths"
+    - "Exclamatory Sentences"
+    - "Vivid Narrative"
+    - "Future Events"
+  "Additional Uses":
+    - "Introducing Quotations"
+    - "Time and Condition Clauses"
+    - "Broadcast Commentaries"
+  "Key Points":
+    - "Key Point 1"
+    - "Key Point 2"
+    - "Key Point 3"
+
+custom_css: |
+  <style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f0f8ff;
+    }
+    .stButton > button {
+        width: 100%;
+        border-radius: 10px;
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        background-color: #1e90ff;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        transition: all 0.3s ease;
+    }
+    .stButton > button:hover {
+        background-color: #4169e1;
+    }
+    .topic-button {
+        background-color: #4682b4 !important;
+    }
+    .subtopic-button {
+        background-color: #6495ed !important;
+    }
+    .completed-button {
+        background-color: #b0c4de !important;
+        color: #333 !important;
+    }
+    .content-text {
+        background-color: #e6f2ff;
+        padding: 20px;
+        border-radius: 10px;
+        font-size: 18px;
+        line-height: 1.6;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .question-box {
+        border: 2px solid #4682b4;
+        border-radius: 10px;
+        padding: 20px;
+        margin-top: 30px;
+        background-color: white;
+    }
+    h1, h2, h3 {
+        color: #00008b;
+    }
+    .stTextInput > div > div > input {
+        border-radius: 5px;
+        border: 2px solid #4682b4;
+    }
+    .content-text span {
+  font-weight: bold;
+    }
+  </style>
